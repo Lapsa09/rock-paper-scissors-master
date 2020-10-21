@@ -8,6 +8,7 @@ const btn2 = document.getElementById("btn-2");
 const openBtn = document.getElementById("open");
 const closeBtn = document.getElementById("close");
 const modal = document.getElementById("modal");
+const popup = document.querySelector(".popup-wrapper");
 
 let result = document.querySelector(".status h1");
 
@@ -64,11 +65,11 @@ reset.addEventListener("click", () => {
 });
 
 openBtn.addEventListener("click", () => {
-  modal.style.display = "flex";
+  popup.style.display = "block";
 });
 
 closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
+  popup.style.display = "none";
 });
 
 updateScore(0);
